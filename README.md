@@ -38,11 +38,19 @@ pip install -r requirements.txt
 
 ### 2. Environment Setup
 
-Create a `.env` file:
+Copy the example environment file and add your API keys:
+```bash
+cp .env.example .env
+```
+
+Then edit `.env` and replace the placeholder values with your actual API keys:
 ```env
-GOOGLE_API_KEY=your_gemini_api_key_here
+GOOGLE_API_KEY=your_actual_google_api_key_here
+ATHARVA_API_KEY=your_actual_google_api_key_here
 ATHARVA_MODEL=gemini-2.0-flash
 ```
+
+**Important:** Get your Google Gemini API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
 
 ### 3. Run the Agent
 
